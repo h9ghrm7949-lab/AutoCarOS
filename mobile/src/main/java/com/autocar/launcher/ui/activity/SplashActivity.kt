@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.lifecycle.lifecycleScope
 import com.autocar.launcher.R
-import com.autocar.launcher.base.BaseActivity
+import com.autocar.launcher.core.base.BaseActivity
 import com.autocar.launcher.ui.LauncherActivity
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

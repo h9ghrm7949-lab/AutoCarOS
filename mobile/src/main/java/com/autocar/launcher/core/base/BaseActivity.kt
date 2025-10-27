@@ -1,4 +1,4 @@
-package com.autocar.launcher.base
+package com.autocar.launcher.core.base
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
