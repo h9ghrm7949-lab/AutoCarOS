@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- 允许该应用查看网络连接的相关信息，例如存在和连接的网络。 -->
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许该应用与WLAN接入点建立和断开连接，以及更改WLAN网络的设备配置。 -->
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 允许该应用创建网络套接字和使用自定义网络协议。浏览器和其他某些应用提供了向互联网发送数据的途径，因此应用无需该权限即可向互联网发送数据。 -->
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+    <!-- 允许应用阻止平板电脑进入休眠状态。 -->
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+    <!-- 此应用可根据网络来源（例如基站和 WLAN 网络）获取您的位置信息。您的平板电脑必须支持并开启这些位置信息服务，此应用才能使用这些服务。 -->
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.ACCESS_GPS" />
+    <!-- 此应用可根据 GPS 或网络来源（例如基站和 WLAN 网络）获取您的位置信息。您的手机必须支持并开启这些位置信息服务，此应用才能使用这些服务。这可能会增加耗电量。 -->
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <!-- 允许该应用使用其他的位置信息提供程序命令。此权限使该应用可以干扰GPS或其他位置信息源的运作。 -->
+    <uses-permission
+        android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 允许应用写入SD卡。 -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许应用读取您SD卡的内容。 -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 允许该应用访问设备的电话功能。此权限可让该应用确定本机号码和设备 ID、是否正处于通话状态以及拨打的号码。 -->
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许应用配置本地蓝牙平板电脑，并允许其查找远程设备且与之配对。 -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 允许该应用查看平板电脑上的蓝牙配置，以及与配对设备建立连接或接受其连接请求。 -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+    <!-- 此应用可显示在其他应用上方或屏幕的其他部分。这可能会妨碍您正常地使用应用，且其他应用的显示方式可能会受到影响。 -->
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 允许应用在系统完成引导后立即自动启动。这样可能会延长平板电脑的启动时间，并允许应用始终运行，从而导致平板电脑总体运行速度减慢。 -->
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 允许该应用结束其他应用的后台进程。此权限可导致其他应用停止运行。 -->
+    <uses-permission
+        android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission
+        android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <!-- 允许该应用查看WLAN网络的相关信息，例如是否启用了WLAN以及连接的WLAN设备的名称。 -->
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许该应用与WLAN接入点建立和断开连接，以及更改WLAN网络的设备配置。 -->
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 允许该应用使用前台服务。 -->
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+    <!-- 允许应用请求安装文件包。 -->
+    <uses-permission
+        android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- 允许应用请求删除文件包。 -->
+    <uses-permission
+        android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+    <!-- 允许应用请求相应的权限，以便忽略针对该应用的电池优化。 -->
+    <uses-permission
+        android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission
+        android:name="com.kugou.android.auto.permission.ACCESS_KUGOU_SERVICE" />
+    <uses-permission
+        android:name="com.tencent.wecarflow.PLAY_CONTROL" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS" />
+    <uses-permission
+        android:name="android.permission.BIND_APPWIDGET" />
+    <uses-permission
+        android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <!-- 允许应用修改系统的设置数据。恶意应用可能会破坏您的系统配置。 -->
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <!-- 允许该应用修改全局音频设置，例如音量和用于输出的扬声器。 -->
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- 此应用可随时使用麦克风进行录音。 -->
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+    <queries>
+        <intent>
+            <action
+                android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+        <intent>
+            <action
+                android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+    <application
+        android:name="com.autocar.launcher.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_home"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Miao"
+        android:largeHeap="true">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <activity android:name=".ui.activity.SplashActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:clearTaskOnLaunch="true"
+            android:theme="@style/Theme.Fullscreen"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.LauncherActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="landscape">
+
+        </activity>
+    </application>
+
+</manifest>
