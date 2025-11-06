@@ -331,4 +331,12 @@
     <dimen name="search_row_icon_size">48dp</dimen>
     <dimen name="search_row_small_icon_size">32dp</dimen>
     <dimen name="padded_rounded_button_padding">8dp</dimen>
+    <dimen name="ac_bar_temp_text_size">24sp</dimen>
+    <dimen name="nav_bar_ac_bar_width">378dp</dimen>
+    <dimen name="nav_bar_ac_bar_height">60dp</dimen>
+    <dimen name="nav_bar_key_height">48dp</dimen>
+    <dimen name="nav_bar_key_width">64dp</dimen>
+    <dimen name="nav_bar_content_width">48dp</dimen>
+    <dimen name="nav_bar_content_height">48dp</dimen>
+    <dimen name="navigation_bar_height">64dp</dimen>
 </resources>

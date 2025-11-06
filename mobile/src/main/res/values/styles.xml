@@ -1,36 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="Theme.Fullscreen" parent="Theme.Miao">
-        <item name="android:windowFullscreen">true</item>
-        <item name="android:windowBackground">@drawable/ic_launcher_bg_bg</item>
-    </style>
-
-    <style name="Theme.Miao" parent="Base.Theme.Miao">
-        <!-- Let the activity handle icon colors -->
-        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">false</item>
-    </style>
-
-    <style name="Base.Theme.Miao" parent="Base.Theme.MaterialThemeBuilder">
-        <item name="android:colorBackground">@color/white_50</item>
-    </style>
-
-    <style name="Base.Theme.MaterialThemeBuilder" parent="Theme.AppCompat.DayNight.NoActionBar">
-        <item name="android:statusBarColor" tools:ignore="NewApi">?android:attr/colorBackground</item>
-        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
-        <item name="android:navigationBarColor" tools:ignore="NewApi">?android:attr/colorBackground</item>
-        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">true</item>
-    </style>
-
-    <style name="Theme.Transparent" parent="Theme.AppCompat.Light">
-        <item name="android:windowIsTranslucent">true</item>
+    <style name="Theme.Autocar" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:screenOrientation">landscape</item>
+        <item name="android:windowBackground">@drawable/ic_launcher_bg</item>
         <item name="android:windowAnimationStyle">@null</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:backgroundDimEnabled">false</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:statusBarColor">@color/Title04</item>
+        <item name="colorOnPrimary">@color/SF_Color12</item>
+        <item name="colorOnSecondary">@color/SF_Color14</item>
+        <item name="colorPrimary">@color/SF_Color12</item>
+        <item name="colorPrimaryVariant">@color/SF_Color12</item>
+        <item name="colorSecondary">@color/SF_Color14</item>
+        <item name="colorSecondaryVariant">@color/SF_Color14</item>
     </style>
 </resources>

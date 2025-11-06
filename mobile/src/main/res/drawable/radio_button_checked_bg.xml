@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="24.0dip"
+        android:width="24.0dip">
+        <bitmap
+            android:src="@drawable/radio_button_checked" />
+    </item>
+</layer-list>

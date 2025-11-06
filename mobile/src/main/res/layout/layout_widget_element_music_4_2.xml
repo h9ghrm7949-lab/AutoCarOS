@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/shape_rectangle_r16_black_30"
+        android:scaleType="fitXY" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/svg_icon_music_cover_60"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:textSize="16.0sp"
+        android:textStyle="bold"
+        android:id="@+id/mt_title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toStartOf="@+id/iv_flag"
+        app:layout_constraintStart_toEndOf="@id/iv_cover"
+        app:layout_constraintTop_toTopOf="@id/iv_cover" />
+    <TextView
+        android:id="@+id/mt_desc"
+        android:paddingTop="4.0dip"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:textSize="12.0sp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="@id/mt_title"
+        app:layout_constraintStart_toStartOf="@id/mt_title"
+        app:layout_constraintTop_toBottomOf="@id/mt_title" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@id/iv_flag"
+        android:layout_width="22.0dip"
+        android:layout_height="22.0dip"
+        android:layout_margin="16.0dip"
+        android:src="@drawable/icon_music_qq"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_prev"
+        android:layout_width="24.0dip"
+        android:layout_height="24.0dip"
+        android:layout_marginBottom="2.0dip"
+        android:layout_marginStart="4.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/iv_cover"
+        app:layout_constraintEnd_toStartOf="@+id/iv_play"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@id/iv_cover" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_play"
+        android:layout_width="28.0dip"
+        android:layout_height="28.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/iv_prev"
+        app:layout_constraintEnd_toStartOf="@+id/iv_next"
+        app:layout_constraintStart_toEndOf="@id/iv_prev"
+        app:layout_constraintTop_toTopOf="@id/iv_prev" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_next"
+        android:layout_width="24.0dip"
+        android:layout_height="24.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/iv_prev"
+        app:layout_constraintEnd_toStartOf="@+id/iv_lyric"
+        app:layout_constraintStart_toEndOf="@id/iv_play"
+        app:layout_constraintTop_toTopOf="@id/iv_prev" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_lyric"
+        android:layout_width="24.0dip"
+        android:layout_height="24.0dip"
+        android:layout_marginEnd="14.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/iv_prev"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_next"
+        app:layout_constraintTop_toTopOf="@id/iv_prev" />
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/seekbar"
+        android:background="@null"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:thumb="@null"
+        android:paddingStart="0.0dip"
+        android:paddingEnd="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_cover"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

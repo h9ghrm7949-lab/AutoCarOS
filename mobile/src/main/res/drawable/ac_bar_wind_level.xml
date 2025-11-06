@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/ac_bar_wind_level_0_off"
+        android:maxLevel="0" />
+    <item
+        android:drawable="@drawable/ac_bar_wind_level_1_on"
+        android:maxLevel="1" />
+    <item
+        android:drawable="@drawable/ac_bar_wind_level_2_on"
+        android:maxLevel="2" />
+    <item
+        android:drawable="@drawable/ac_bar_wind_level_3_on"
+        android:maxLevel="3" />
+    <item
+        android:drawable="@drawable/ac_bar_wind_level_4_on"
+        android:maxLevel="4" />
+    <item
+        android:drawable="@drawable/ac_bar_wind_level_5_on"
+        android:maxLevel="5" />
+    <item
+        android:drawable="@drawable/ac_bar_wind_level_6_on"
+        android:maxLevel="6" />
+    <item
+        android:drawable="@drawable/ac_bar_wind_level_7_on"
+        android:maxLevel="7" />
+</level-list>

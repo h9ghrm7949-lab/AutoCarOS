@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/bg_banner_app_download" />
+    <item
+        android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners
+                    android:radius="20.0dip" />
+                <gradient
+                    android:startColor="@color/SF_Color13_Start"
+                    android:endColor="@color/SF_Color13_End"
+                    android:angle="-90.0" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

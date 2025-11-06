@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    android:height="22.0dip"
+    android:width="22.0dip"
+    android:viewportWidth="22.0"
+    android:viewportHeight="22.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path
+            android:pathData="M2.75,2.75h16.5v16.5h-16.5z" />
+        <path
+            android:fillColor="#ffffffff"
+            android:pathData="M6.187,10.313C5.808,10.313 5.5,10.62 5.5,11C5.5,11.38 5.808,11.688 6.187,11.688C6.187,11.688 6.187,10.313 6.187,10.313C6.187,10.313 6.187,10.313 6.187,10.313ZM15.812,11.688C16.192,11.688 16.5,11.38 16.5,11C16.5,10.62 16.192,10.313 15.812,10.313C15.812,10.313 15.812,11.688 15.812,11.688C15.812,11.688 15.812,11.688 15.812,11.688ZM6.187,11.688C6.187,11.688 15.812,11.688 15.812,11.688C15.812,11.688 15.812,10.313 15.812,10.313C15.812,10.313 6.187,10.313 6.187,10.313C6.187,10.313 6.187,11.688 6.187,11.688C6.187,11.688 6.187,11.688 6.187,11.688Z"
+            android:strokeAlpha="0.4"
+            android:fillAlpha="0.4" />
+    </group>
+    <path
+        android:fillColor="#ffffffff"
+        android:pathData="M11,0L11,0A11,11 0,0 1,22 11L22,11A11,11 0,0 1,11 22L11,22A11,11 0,0 1,0 11L0,11A11,11 0,0 1,11 0z"
+        android:strokeAlpha="0.1"
+        android:fillAlpha="0.1" />
+</vector>

@@ -3,6 +3,7 @@ package com.autocar.launcher
 import android.app.Application
 import com.king.logx.LogX
 import dagger.hilt.android.HiltAndroidApp
+import me.jessyan.autosize.AutoSizeConfig
 import timber.log.Timber
 
 @HiltAndroidApp
@@ -11,6 +12,7 @@ class App: Application() {
         super.onCreate()
         context = this
         initLog()
+        initAutoSize()
     }
 
     private fun initLog() {
@@ -21,6 +23,14 @@ class App: Application() {
             }
 
         })
+    }
+
+    private fun initAutoSize() {
+        AutoSizeConfig.getInstance()
+            .setBaseOnWidth(false)
+            .setUseDeviceSize(true)
+            .setDesignWidthInDp(1280)
+            .setDesignHeightInDp(720)
     }
 
     companion object {

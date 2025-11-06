@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="true"
+        android:drawable="@drawable/svg_icon_live2d_theme2_air_conditioner_plus" />
+    <item
+        android:drawable="@drawable/svg_icon_live2d_theme2_air_conditioner_plus_disable" />
+</selector>

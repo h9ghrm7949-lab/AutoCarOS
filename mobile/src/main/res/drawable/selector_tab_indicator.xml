@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/shape_re_r40_gradient_d83378_ee5c34_list" />
+    <item
+        android:state_selected="false"
+        android:drawable="@drawable/shape_re_r40_solid_21222b" />
+</selector>

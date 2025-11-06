@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/cl_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/shape_rectangle_r16_black_30"
+        android:scaleType="fitXY" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_bg_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/icon_map_navigation_mask"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="14.0sp"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:id="@+id/tv_uninstall_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16.0dip"
+        android:maxWidth="160.0dip"
+        android:text="@string/map_navigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_uninstall_flag"
+        android:layout_width="24.0dip"
+        android:layout_height="24.0dip"
+        android:layout_marginBottom="20.0dip"
+        android:layout_marginStart="16.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="14.0sp"
+        android:id="@+id/tv_uninstall_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/open_map"
+        app:layout_constraintBottom_toBottomOf="@id/iv_uninstall_flag"
+        app:layout_constraintStart_toEndOf="@id/iv_uninstall_flag"
+        app:layout_constraintTop_toTopOf="@id/iv_uninstall_flag" />
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_uninstall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tv_uninstall_title,iv_uninstall_flag,tv_uninstall_hint" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_install_flag"
+        android:layout_width="22.0dip"
+        android:layout_height="22.0dip"
+        android:layout_margin="16.0dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="14.0sp"
+        android:ellipsize="end"
+        android:id="@+id/tv_install_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="160.0dip"
+        android:layout_marginStart="4.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/iv_install_flag"
+        app:layout_constraintStart_toEndOf="@id/iv_install_flag"
+        app:layout_constraintTop_toTopOf="@id/iv_install_flag" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_install_arrow"
+        android:layout_width="14.0dip"
+        android:layout_height="14.0dip"
+        android:layout_marginStart="4.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/iv_install_flag"
+        app:layout_constraintStart_toEndOf="@id/tv_install_title"
+        app:layout_constraintTop_toTopOf="@id/iv_install_flag" />
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_install_title"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="iv_install_flag,tv_install_title,iv_install_arrow" />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/ll_home"
+        android:background="@drawable/shape_re_r40_solid_2b2f32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18.0dip"
+        android:layout_marginStart="16.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_home"
+            android:layout_width="24.0dip"
+            android:layout_height="24.0dip"
+            android:layout_marginTop="4.0dip"
+            android:layout_marginBottom="4.0dip"
+            android:layout_marginStart="10.0dip" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="12.0sp"
+            android:id="@+id/tv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/map_home_title"
+            android:layout_marginEnd="14.0dip" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/ll_company"
+        android:background="@drawable/shape_re_r40_solid_2b2f32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/ll_home"
+        app:layout_constraintStart_toEndOf="@id/ll_home"
+        app:layout_constraintTop_toTopOf="@id/ll_home">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_company"
+            android:layout_width="24.0dip"
+            android:layout_height="24.0dip"
+            android:layout_marginTop="4.0dip"
+            android:layout_marginBottom="4.0dip"
+            android:src="@drawable/svg_icon_map_company"
+            android:layout_marginStart="10.0dip" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="12.0sp"
+            android:id="@+id/tv_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/map_biz_title"
+            android:layout_marginEnd="14.0dip" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_install_default"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="ll_home,ll_company" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="22.0sp"
+        android:textStyle="bold"
+        android:id="@+id/tv_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2.0dip"
+        app:layout_constraintBottom_toTopOf="@+id/tv_description"
+        app:layout_constraintStart_toStartOf="@id/seekbar" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="12.0sp"
+        android:textStyle="bold"
+        android:id="@+id/tv_distance_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4.0dip"
+        android:layout_marginStart="4.0dip"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_distance"
+        app:layout_constraintStart_toEndOf="@+id/tv_distance" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="12.0sp"
+        android:ellipsize="end"
+        android:id="@id/tv_description"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:lines="1"
+        app:layout_constraintBottom_toTopOf="@id/seekbar"
+        app:layout_constraintEnd_toStartOf="@+id/iv_orientation"
+        app:layout_constraintStart_toStartOf="@id/seekbar" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_orientation"
+        android:layout_width="52.0dip"
+        android:layout_height="52.0dip"
+        android:layout_marginEnd="16.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/tv_description"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="0.0dip"
+        android:layout_height="2.0dip"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginBottom="12.0dip"
+        android:thumb="@null"
+        android:paddingStart="0.0dip"
+        android:paddingEnd="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_navigation"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>
